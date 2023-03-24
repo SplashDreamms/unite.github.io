@@ -1,0 +1,297 @@
+/*Aqui nesse * mexe em nada, pois tudo que alterar aqui vai alterar no código todo*/
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Caso deseje mudar, apenas o gradiente da cor que usa*/
+body {
+  background: #044476;
+  background-attachment: fixed;
+  font-family: 'g Guarantee', sans-serif;
+  color: rgb(255, 255, 255);
+  height: 100%; /* define a altura do elemento para 100% */
+}
+
+.fundo{
+  position: absolute;
+  bottom: 0px;
+  right: 390px;
+  width: 1400px;
+  height: 800px;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+}
+
+.fundo3{
+  position: absolute;
+  bottom: 0px;
+  right: -410px;
+  width: 400px;
+  height: 800px;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+}
+
+.fundo2{
+  position: absolute;
+  bottom: 90px;
+  right: 45px;
+  width: 1800px;
+  height: 800px;
+  border-radius: 2%;
+}
+
+/*Aqui bem simple, só o título que tá escrito,
+ATENÇÃO caso mude a altura deve alterar a altura do container e do extras, pois elas fazem cálculo baseado nelas*/
+.cabecalho{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+.cabecalho img{
+  width: 200px;
+  height: 100px;
+}
+/*Bom aqui foi só para aplciar aquele efeito gradiente nas letras, caso queira alterar só mudar as cores mesmo*/
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-shadow: -2px -2px 0 #051835, 2px -2px 0 #051835, -2px 2px 0 #051835, 2px 2px 0 #051835;
+}
+main h1, span, th {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-shadow: -2px -2px 0 #7b3648, 2px -2px 0 #7b3648, -2px 2px 0 #7b3648, 2px 2px 0 #7b3648
+}
+
+/*Aqui seria tudo que engloba o calendário e o extras, não acho que deva mexer a menos que queira muito kkkk*/
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+}
+/*Extras é bem explicatio, seriam onde você quer por tudo do extra mesmo*/
+.extras{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.content{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* Para alterar coisas relacionadas a teablea onde:
+table: é a tabela em si.
+th: table head, onde ficam os dias da semana
+td: um célula da tabela
+span: seriam onde os números estão 
+calendario: modificações da div onde a tabela se encontra caso queira trocar a cor, tamanho, font e etc
+*/
+.calendario {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 95%;
+  margin:auto;
+}
+
+table.table1 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #696f66;
+}
+
+table.table2 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #5f7479;
+}
+
+table.table3 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #4c6487;
+}
+
+table.table4 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #395d9c;
+}
+
+table.table5 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #2856b0;
+}
+
+table.table6 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #144fc6;
+}
+
+th,
+td {
+  text-align: center;
+  border-left: 1px solid rgb(17, 29, 111);
+  border-top: 2px solid rgb(118, 195, 193);
+  border-bottom: 2px solid rgb(118, 195, 193);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+th {
+  max-height: 1rem;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+  max-width: 1rem;  
+}
+
+.vazio{
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1088156767847985152/pokeball.png');
+  background-size: 100px 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+td {
+  max-height: 1rem;
+  text-align: left;
+  vertical-align: top;
+  padding: 3px;
+  max-width: 1rem;  
+}
+
+h2{
+  font-size: 100px;
+  opacity: 0.2;
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  text-shadow: none;
+  position: relative;
+  bottom: -20px;
+}
+
+h3{
+  font-size: 2rem;
+  animation: glow1;
+  margin-bottom: -78px;
+}
+
+.teste {
+  position: absolute;
+}
+
+span {
+  display: block;
+  margin-top: 15px;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-align: left;
+}
+
+.tooltip {
+  position: relative;
+}
+/*Aqui você pode ta mexendo para editar cor e mudar fonte e tamanho do blãoq ue é exibido quando passa o mouse*/
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:rgb(99, 99, 207);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  font-size: .8rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.espacamento{
+  height: 10px;
+}
+
+.espacamento2{
+  height: 5px;
+}
+
+.day5{
+  background-image: url("../imgs/sylveon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* .day5 :hover{
+  background-color: #0288d1;
+} */
+
+/*Apenas para customizar scoll*/
+::-webkit-scrollbar-track {
+  background-color: #f47b36;
+}
+::-webkit-scrollbar {
+  width: 1px;
+  background: #f47b36;
+}
+::-webkit-scrollbar-thumb {
+  background: #f47b36;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fff;
+  }
+}
