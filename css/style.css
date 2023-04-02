@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Titan+One&display=swap');
+
 /*Aqui nesse * mexe em nada, pois tudo que alterar aqui vai alterar no código todo*/
 *{
   margin: 0;
@@ -12,71 +14,62 @@ body {
   height: 100%; /* define a altura do elemento para 100% */
 }
 
-.fundo{
-  position: absolute;
-  bottom: 0px;
-  right: 390px;
-  width: 1400px;
-  height: 800px;
-  border-radius: 2%;
-  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
-  background-size: cover;
-  outline-color: white;
-  outline-width: 2px;
-  outline-style: solid;
-  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+html,body{
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.fundo3{
-  position: absolute;
-  bottom: 0px;
-  right: -410px;
-  width: 400px;
-  height: 800px;
-  border-radius: 2%;
-  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
-  background-size: cover;
-  outline-color: white;
-  outline-width: 2px;
-  outline-style: solid;
-  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
-}
-
-.fundo2{
+.caixas{
   position: absolute;
   bottom: 90px;
-  right: 45px;
-  width: 1800px;
+  right: -800px;
+  width: 2800px;
   height: 800px;
   border-radius: 2%;
 }
 
-/*Aqui bem simple, só o título que tá escrito,
-ATENÇÃO caso mude a altura deve alterar a altura do container e do extras, pois elas fazem cálculo baseado nelas*/
+.caixa-calendario{
+  position: absolute;
+  top: 30px;
+  left: 160px;
+  width: 1500px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+}
+
+.caixa-extras{
+  position: absolute;
+  bottom: 40px;
+  right: 820px;
+  width: 300px;
+  height: 730px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+}
+
+/*-------------------------------------------------------*/
 .cabecalho{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 8rem;
-}
-.cabecalho img{
-  width: 200px;
-  height: 100px;
-}
-/*Bom aqui foi só para aplciar aquele efeito gradiente nas letras, caso queira alterar só mudar as cores mesmo*/
-header h1 {
-  font-size: 3rem;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  text-shadow: -2px -2px 0 #051835, 2px -2px 0 #051835, -2px 2px 0 #051835, 2px 2px 0 #051835;
-}
-main h1, span, th {
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  text-shadow: -2px -2px 0 #7b3648, 2px -2px 0 #7b3648, -2px 2px 0 #7b3648, 2px 2px 0 #7b3648
+  height: 60px;
 }
 
-/*Aqui seria tudo que engloba o calendário e o extras, não acho que deva mexer a menos que queira muito kkkk*/
 .container{
   display: flex;
   align-items: center;
@@ -98,96 +91,22 @@ main h1, span, th {
   overflow: auto;
 }
 
-/* Para alterar coisas relacionadas a teablea onde:
-table: é a tabela em si.
-th: table head, onde ficam os dias da semana
-td: um célula da tabela
-span: seriam onde os números estão 
-calendario: modificações da div onde a tabela se encontra caso queira trocar a cor, tamanho, font e etc
-*/
-.calendario {
-  border: 1px solid transparent;
-  border-radius: 8px;
-  width: 95%;
-  margin:auto;
+span, th {
+  padding: 0.5rem 1rem;
 }
 
-table.table1 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #696f66;
-}
+/*--------------ITENS DO CALENDÁRIO--------------*/
 
-table.table2 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #5f7479;
-}
-
-table.table3 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #4c6487;
-}
-
-table.table4 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #395d9c;
-}
-
-table.table5 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #2856b0;
-}
-
-table.table6 {
-  border-collapse: collapse;
-  width: 100%;
-  margin:auto;
-  padding-top: 380px;
-  font-size: 2rem;
-  background-color: #144fc6;
-}
-
-th,
-td {
-  text-align: center;
-  border-left: 1px solid rgb(17, 29, 111);
-  border-top: 2px solid rgb(118, 195, 193);
-  border-bottom: 2px solid rgb(118, 195, 193);
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-th {
+th.dias-semana {
   max-height: 1rem;
   text-align: center;
   vertical-align: top;
   padding: 10px;
   max-width: 1rem;  
-}
-
-.vazio{
-  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1088156767847985152/pokeball.png');
-  background-size: 100px 92px;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-left: 1px solid rgb(17, 29, 111);
+  border-top: 2px solid rgb(118, 195, 193);
+  border-bottom: 2px solid rgb(118, 195, 193);
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 td {
@@ -198,7 +117,112 @@ td {
   max-width: 1rem;  
 }
 
-h2{
+.calendario {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 95%;
+  margin:auto;
+}
+
+table.dia-semana {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #696f66;
+}
+
+table.linha1 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #5f7479;
+}
+
+table.linha2 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #4c6487;
+}
+
+table.linha3 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #395d9c;
+}
+
+table.linha4 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #2856b0;
+}
+
+table.linha5 {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 2rem;
+  background-color: #144fc6;
+}
+
+.espacamento{/*--------------Espaço entre as Linhas--------------*/
+  height: 10px;
+}
+
+.espacamento2{/*--------------Espaço entre os dias da semana e a Linha 1--------------*/
+  height: 5px;
+}
+
+.vazio{/*--------------Quando tiver uma célula sem nenhum dia--------------*/
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1088156767847985152/pokeball.png');
+  background-size: 100px 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  border-left: 1px solid rgb(17, 29, 111);
+  border-top: 2px solid rgb(118, 195, 193);
+  border-bottom: 2px solid rgb(118, 195, 193);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+td {
+  text-align: center;
+  border-left: 1px solid rgb(17, 29, 111);
+  border-top: 2px solid rgb(118, 195, 193);
+  border-bottom: 2px solid rgb(118, 195, 193);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.dias {/*--------------Serve para atribuir um tamanho padrão para as celulas dos dias, ou slá--------------*/
+  position: absolute;
+}
+
+/*--------------TITULOS--------------*/
+h1{/*Título Principal*/
+  font-size: 60px;
+  background: linear-gradient(to bottom, #ffffff, #ffffff, #76c3c1, #76c3c1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px #6b2a3b;
+  font-family: 'Lilita One', cursive;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h2{/*Número Pequenos*/
   font-size: 100px;
   opacity: 0.2;
   color: transparent;
@@ -208,17 +232,13 @@ h2{
   bottom: -20px;
 }
 
-h3{
+h3{/*Número Grandes Transparentes*/
   font-size: 2rem;
   animation: glow1;
   margin-bottom: -78px;
 }
 
-.teste {
-  position: absolute;
-}
-
-span {
+span { /*--------------Por algum motivo, ta servindo para dar o efeito de brilho aos números--------------*/
   display: block;
   margin-top: 15px;
   animation: glow 1s ease-in-out infinite alternate;
@@ -243,21 +263,48 @@ span {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  transition: 0.95s;
 }
 
-.espacamento{
-  height: 10px;
+
+table.extralateral {
+  border-collapse: collapse;
+  width: 100%;
+  margin:auto;
+  padding-top: 380px;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
 }
 
-.espacamento2{
-  height: 5px;
-}
-
-.day5{
+.day25{
   background-image: url("../imgs/sylveon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  z-index: 1;
+  -webkit-animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 0.8s both;
+}
+
+.day25::before {
+  content: "COMMEMORATIVE EVENT";
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  -webkit-text-stroke: 1px #4c3412;
+}
+
+.scroll{
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* .day5 :hover{
@@ -293,5 +340,89 @@ span {
   
   to {
     text-shadow: 0 0 5px #fff;
+  }
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
