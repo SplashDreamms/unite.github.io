@@ -72,6 +72,22 @@ main h1, span, th {
   outline-style: solid;
   box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
 }
+
+@media (max-width: 1100px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .calendario{
+    width: 100%
+  }
+  .extras{
+    margin-top: 30px;
+    width: 30%;
+  }
+}
+
+
 .content{
   max-width: 100%;
   max-height: 100%;
@@ -269,6 +285,8 @@ table.extralateral {
   font-family: 'Lilita One', cursive;
   color: yellow;
   -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .umbreon{
@@ -450,6 +468,35 @@ table.extralateral {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    opacity: 1;
+  }
+}
+
+ /* ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
