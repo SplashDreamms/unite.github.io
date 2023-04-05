@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Titan+One&display=swap');
 
+
 /*Aqui nesse * mexe em nada, pois tudo que alterar aqui vai alterar no código todo*/
 *{
   margin: 0;
@@ -9,60 +10,13 @@
 body {
   background: #044476;
   background-attachment: fixed;
-  font-family: 'g Guarantee', sans-serif;
+  font-family: 'Lilita One', cursive;
   color: rgb(255, 255, 255);
   height: 100%; /* define a altura do elemento para 100% */
 }
 
-html,body{
-  height: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.caixas{
-  position: absolute;
-  bottom: 90px;
-  right: -800px;
-  width: 2800px;
-  height: 800px;
-  border-radius: 2%;
-}
-
-.caixa-calendario{
-  position: absolute;
-  top: 30px;
-  left: 160px;
-  width: 1500px;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 2%;
-  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
-  background-size: cover;
-  outline-color: white;
-  outline-width: 2px;
-  outline-style: solid;
-  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
-}
-
-.caixa-extras{
-  position: absolute;
-  bottom: 40px;
-  right: 820px;
-  width: 300px;
-  height: 730px;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 2%;
-  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
-  background-size: cover;
-  outline-color: white;
-  outline-width: 2px;
-  outline-style: solid;
-  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
-}
-
-/*-------------------------------------------------------*/
+/*Aqui bem simple, só o título que tá escrito,
+ATENÇÃO caso mude a altura deve alterar a altura do container e do extras, pois elas fazem cálculo baseado nelas*/
 .cabecalho{
   display: flex;
   align-items: center;
@@ -70,6 +24,15 @@ html,body{
   height: 60px;
 }
 
+/*Bom aqui foi só para aplciar aquele efeito gradiente nas letras, caso queira alterar só mudar as cores mesmo*/
+header h1 {
+  padding: 0.5rem 1rem;
+}
+main h1, span, th {
+  padding: 0.5rem 1rem;
+}
+
+/*Aqui seria tudo que engloba o calendário e o extras, não acho que deva mexer a menos que queira muito kkkk*/
 .container{
   display: flex;
   align-items: center;
@@ -77,22 +40,42 @@ html,body{
   flex-direction: row;
   margin: auto;
 }
-/*Extras é bem explicatio, seriam onde você quer por tudo do extra mesmo*/
+
+.calendario {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  width: 70%;
+  margin:auto;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
+}
+
 .extras{
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 22%;
+  max-height: 100;
+  border-radius: 20px;
   margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  background-image: url('https://cdn.discordapp.com/attachments/828605988474191872/1087441388376957020/Item_enhancer.png');
+  background-size: cover;
+  outline-color: white;
+  outline-width: 2px;
+  outline-style: solid;
+  box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
 }
 .content{
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
-}
-
-span, th {
-  padding: 0.5rem 1rem;
 }
 
 /*--------------ITENS DO CALENDÁRIO--------------*/
@@ -117,16 +100,9 @@ td {
   max-width: 1rem;  
 }
 
-.calendario {
-  border: 1px solid transparent;
-  border-radius: 8px;
-  width: 95%;
-  margin:auto;
-}
-
 table.dia-semana {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -135,7 +111,7 @@ table.dia-semana {
 
 table.linha1 {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -144,7 +120,7 @@ table.linha1 {
 
 table.linha2 {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -153,7 +129,7 @@ table.linha2 {
 
 table.linha3 {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -162,7 +138,7 @@ table.linha3 {
 
 table.linha4 {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -171,7 +147,7 @@ table.linha4 {
 
 table.linha5 {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -213,6 +189,7 @@ td {
 /*--------------TITULOS--------------*/
 h1{/*Título Principal*/
   font-size: 60px;
+  text-align: center;
   background: linear-gradient(to bottom, #ffffff, #ffffff, #76c3c1, #76c3c1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -259,13 +236,14 @@ span { /*--------------Por algum motivo, ta servindo para dar o efeito de brilho
   position: absolute;
   z-index: 1;
   font-size: .8rem;
+  
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   transition: 0.95s;
+  
 }
-
 
 table.extralateral {
   border-collapse: collapse;
@@ -279,27 +257,35 @@ table.extralateral {
   overflow: auto;
 }
 
-.day25{
-  background-image: url("../imgs/sylveon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: 1;
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-  animation: wobble-hor-bottom 0.8s both;
-}
-
 .day25::before {
-  content: "COMMEMORATIVE EVENT";
+  content: "PLACE HOLDER";
   position: absolute;
   text-align: center;
-  top: 20px;
+  top: 75px;
   left: 20px;
   font-size: 18px;
+  z-index: 20;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
   color: yellow;
   -webkit-text-stroke: 1px #4c3412;
+}
+
+.umbreon{
+  position: absolute;
+  top: -70px;
+  left: 40px;
+  width: 50%;
+  height: 50%;
+  background-image: url("../imgs/umbreon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 .scroll{
@@ -423,6 +409,47 @@ table.extralateral {
     opacity: 0.6;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .container{
+    flex-direction: column;
+    display: flex;
+  }
+  .h3{
+    font-size: 1rem;
+  }
+
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
