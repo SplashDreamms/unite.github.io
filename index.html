@@ -70,7 +70,7 @@
           <td div="dias"><span><h3>23</h3><h2>23</h2></span></td>
           <td div="dias"><span><h3>24</h3><h2>24</h2></span></td>
             <td class="day25 tooltip">
-              <span><h3>25</h3><h2>25</h2></span><div class="umbreon"></div><div class="umbreon-text"></div>
+              <span><h3>25</h3><h2>25</h2></span><div class="umbreon"></div>
               <span class="tooltiptext">
                 Foi lançado e nerfado logo em 48hrs, pois era muito broken, nada mais justo
               </span>
@@ -95,22 +95,75 @@
     </div>
     <div class="extras">
       <h1>EXTRAS</h1>
-      <div class="content">
-        <span>Extras, vai lançar tal skin, no dia tal</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-        <span>Extras</span>
-
+      <div id="timer">24:00:00</div>
+      <div class="extras-texto">
+          <div class="caixas">
+            <h4>CLUB MEMBERSHIP</h4><img src="/calendar/imgs/umbreon.png" class="umbreonn">
+          </div>
+          <div class="caixas">
+            <h4>BATTLE PASS 16</h4>
+          </div>
+          <div class="caixas">
+            <h4>CLUB MEMBERSHIP</h4>
+          </div>
+          <div class="caixas">
+            <h4>BATTLE PASS 16</h4>
+          </div>
+          <div class="caixas">
+            <h4>CLUB MEMBERSHIP</h4>
+          </div>
+          <div class="caixas">
+            <h4>BATTLE PASS 16</h4>
+          </div>
+      </div>
+      <h1>LOGS</h1>
+      <div class='logs'>
+        00/00/00 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        00/00/00 - Suspendisse viverra libero in purus iaculis, et euismod metus rutrum.<br>
+        00/00/00 - Curabitur eu elit nec mauris vestibulum dignissim.<br>
+        00/00/00 - In porttitor odio quis sapien maximus, sed rutrum ligula convallis.<br>
+        00/00/00 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        00/00/00 - Suspendisse viverra libero in purus iaculis, et euismod metus rutrum.<br>
+        00/00/00 - Curabitur eu elit nec mauris vestibulum dignissim.<br>
+        00/00/00 - In porttitor odio quis sapien maximus, sed rutrum ligula convallis.<br>
+        00/00/00 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        00/00/00 - Suspendisse viverra libero in purus iaculis, et euismod metus rutrum.<br>
+        00/00/00 - Curabitur eu elit nec mauris vestibulum dignissim.<br>
+        00/00/00 - In porttitor odio quis sapien maximus, sed rutrum ligula convallis.<br>
+      </div>
+      <div class="creditos">
+        <div class="credito-texto"><h4>Follow me at @SplashDreamms for more updates</h4></div>
+        <div class="fotinha"><img src="https://f2.toyhou.se/file/f2-toyhou-se/images/59189961_AuI585sotJ1dv2T.png" alt="Imagem" class="jujuba"></div>
+    
       </div>
     </div>
   </main>
+
+
 </body>
 
 
 
 </html>
+
+<script>
+  function atualizarTimer() {
+    var dataAtual = new Date();
+    var horaAtual = dataAtual.getUTCHours();
+    var minutoAtual = dataAtual.getUTCMinutes();
+    var segundoAtual = dataAtual.getUTCSeconds();
+    var horaInicio = horaAtual;
+    var minutoInicio = minutoAtual;
+    var segundoInicio = segundoAtual;
+    var horaTermino = 24;
+    var minutoTermino = 0;
+    var segundoTermino = 0;
+    var tempoRestante = (horaTermino - horaInicio) * 3600 + (minutoTermino - minutoInicio) * 60 + (segundoTermino - segundoInicio);
+    var horas = Math.floor(tempoRestante / 3600);
+    var minutos = Math.floor((tempoRestante % 3600) / 60);
+    var segundos = tempoRestante % 60;
+    document.getElementById("timer").innerHTML = (horas < 10 ? '0' : '') + horas + 'h' + (minutos < 10 ? '0' : '') + minutos + 'm' + (segundos < 10 ? '0' : '') + segundos + 's Until Day RESET';
+    setTimeout(atualizarTimer, 1000);
+  }
+  atualizarTimer();
+</script>
