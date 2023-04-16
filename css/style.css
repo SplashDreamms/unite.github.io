@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 
 /*Aqui nesse * mexe em nada, pois tudo que alterar aqui vai alterar no código todo*/
@@ -8,7 +9,7 @@
 }
 /*Caso deseje mudar, apenas o gradiente da cor que usa*/
 body {
-  background: #044476;
+  background-image: url('../imgs/fundo_azul.png');
   background-attachment: fixed;
   font-family: 'Lilita One', cursive;
   color: rgb(255, 255, 255);
@@ -75,7 +76,7 @@ main h1, span, th {
   box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1width100px) {
   .container{
     display: flex;
     flex-direction: column;
@@ -86,6 +87,11 @@ main h1, span, th {
   .extras{
     margin-top: 30px;
     width: 40%;
+  }
+
+  .h12{
+    position: absolute;
+    width: 50px;
   }
 }
 
@@ -236,7 +242,7 @@ h3{/*Número Grandes Transparentes*/
 h4{
   position: relative;
   text-align: center;
-  top: -35px;
+  top: -5px;
   font-size: 25px;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
@@ -245,6 +251,130 @@ h4{
 	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
+h5{
+  position: relative;
+  text-align: center;
+  top: -215px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h7{
+  position: absolute;
+  text-align: center;
+  top: 280px;
+  left: 275px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h9 {
+  position: relative;
+  text-align: center;
+  top: -60px;
+  left: -166px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h11 {
+  position: relative;
+  text-align: center;
+  top: -40px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h10{
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Balsamiq Sans', cursive;
+  color: #36240b;
+}
+
+h12{
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  left: 1150px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h13{
+  position: absolute;
+  text-align: center;
+  top: 425px;
+  left: 970px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  z-index: 15;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h14{
+  position: relative;
+  text-align: center;
+  top: -45px;
+  left: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h15{
+  position: relative;
+  text-align: center;
+  top: -35px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 span { /*--------------Por algum motivo, ta servindo para dar o efeito de brilho aos números--------------*/
   display: block;
@@ -288,26 +418,10 @@ table.extralateral {
   overflow: auto;
 }
 
-.day25::before {
-  content: "PLACE HOLDER";
-  position: absolute;
-  text-align: center;
-  top: 75px;
-  left: 15px;
-  font-size: 18px;
-  z-index: 20;
-  font-weight: bold;
-  font-family: 'Lilita One', cursive;
-  color: yellow;
-  -webkit-text-stroke: 1px #4c3412;
-	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
 .umbreon{
-  position: absolute;
-  top: -70px;
-  left: 35px;
+  position: relative;
+  top: -150px;
+  left: 45px;
   width: 50%;
   height: 50%;
   background-image: url("../imgs/umbreon.png");
@@ -321,8 +435,78 @@ table.extralateral {
 
 }
 
+.victory{
+  position: absolute;
+  top: -145px;
+  left: 45px;
+  width: 23%;
+  height: 23%;
+  background-image: url("../imgs/victory.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.eevee{
+  position: absolute;
+  top: -145px;
+  left: 69px;
+  width: 18%;
+  height: 18%;
+  background-image: url("../imgs/eevee.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.charizard{
+  position: absolute;
+  top: 165px;
+  left: 315px;
+  width: 5%;
+  height: 5%;
+  z-index: 10;
+  background-image: url("../imgs/charizard-mb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.week{
+  position: absolute;
+  top: 165px;
+  width: 4%;
+  height: 4%;
+  z-index: 10;
+  background-image: url("../imgs/week1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
 .umbreonn{
-  width: 40%;
+  position: relative;
+  top: -140px;
+  left: 280px;
+  width: 30%;
   filter: drop-shadow(0 0 10px white);
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -333,6 +517,7 @@ table.extralateral {
 
 .extras-texto{
   overflow-y: scroll;
+  overflow-x: hidden;
   max-height: 40%;
 }
 
@@ -382,7 +567,7 @@ background-color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 25px;
   border-radius: 50%; /* define a borda circular */
   max-width: 50%;
   max-height: 90%;
@@ -541,6 +726,10 @@ background-color: #ffffff;
     font-size: 1rem;
   }
 
+  .h12{
+    left: 150px;
+  }
+
 
 }
 
@@ -631,4 +820,79 @@ background-color: #ffffff;
             transform: translateZ(0);
     opacity: 1;
   }
+}
+
+.tooltip {
+  position: absolute;
+  text-align:left;
+}
+
+.tooltip .right {
+  min-width:200px;
+  max-width:400px;
+  top:-150px;
+  left:100%;
+  margin-left:40px;
+  transform:translate(0, -50%);
+  padding:0;
+  text-align: center;
+  color:#6b2a3b;
+  background-color:#ffffff;
+  font-weight:normal;
+  font-size:20px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .right {
+  visibility:visible; opacity:1;
+}
+
+.tooltip .right img {
+  width:400px;
+}
+.tooltip .text-content {
+  padding:10px 20px;
+}
+
+.tooltip .right i {
+  position:absolute;
+  top:50%;
+  right:100%;
+  width:12px;
+  height:24px;
+  overflow:hidden;
+}
+.tooltip .right i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:0;
+  top:50%;
+  transform:translate(50%,-50%) rotate(-45deg);
+  background-color:#ffffff;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+
+
+.bottom {
+  display: flex;
+}
+
+.coluna {
+  flex: 1;
+}
+
+coluna.coluna-2{
+  margin-top: 40px;
+}
+
+.base{
+  max-width: 100%;
 }
