@@ -423,7 +423,7 @@ table.extralateral {
 .umbreon{
   position: relative;
   top: -150px;
-  left: 45px;
+  left: 25px;
   width: 50%;
   height: 50%;
   background-image: url("../imgs/umbreon.png");
@@ -455,8 +455,8 @@ table.extralateral {
 
 .eevee{
   position: absolute;
-  top: -145px;
-  left: 69px;
+  top: -135px;
+  left: 49px;
   width: 18%;
   height: 18%;
   background-image: url("../imgs/eevee.png");
