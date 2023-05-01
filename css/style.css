@@ -385,29 +385,6 @@ span { /*--------------Por algum motivo, ta servindo para dar o efeito de brilho
   text-align: left;
 }
 
-.tooltip {
-  position: relative;
-}
-/*Aqui você pode ta mexendo para editar cor e mudar fonte e tamanho do blãoq ue é exibido quando passa o mouse*/
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color:rgb(99, 99, 207);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  font-size: .8rem;
-  
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  transition: 0.95s;
-  
-}
-
 table.extralateral {
   border-collapse: collapse;
   width: 100%;
@@ -512,6 +489,7 @@ table.extralateral {
   max-height: 40%;
   height: 250px;
   min-width: 100%;
+  width: 20%;
 }
 
 .caixas{
@@ -525,19 +503,20 @@ table.extralateral {
   background-color: #ffffff;
   }
 
-.extras-span-texto{
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: 'Lilita One', cursive;
-  color: yellow;
-  -webkit-text-stroke: 1px #4c3412;
-	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
 .umbreonn{
   position: relative;
   top: -140px;
   left: 280px;
+  width: 30%;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.moeda{
+  position: relative;
+  top: -100px;
+  left:-20px;
   width: 30%;
   filter: drop-shadow(0 0 10px white);
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -827,7 +806,7 @@ table.extralateral {
   min-width:200px;
   max-width:400px;
   top:-150px;
-  left:100%;
+  left:50%;
   margin-left:40px;
   transform:translate(0, -50%);
   padding:0;
@@ -875,6 +854,55 @@ table.extralateral {
   box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 
+.tooltip .left {
+  min-width:200px;
+  max-width:400px;
+  top:350px;
+  transform:translate(0, -50%);
+  padding:0;
+  text-align: center;
+  color:#6b2a3b;
+  background-color:#ffffff;
+  font-weight:normal;
+  font-size:20px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .left {
+  visibility:visible; opacity:1;
+}
+
+.tooltip .left img {
+  width:400px;
+}
+.tooltip .text-content {
+  padding:10px 20px;
+}
+
+.tooltip .left i {
+  position:absolute;
+  top:50%;
+  right:100%;
+  width:12px;
+  height:24px;
+  overflow:hidden;
+}
+.tooltip .left i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:0;
+  top:50%;
+  transform:translate(50%,-50%) rotate(-45deg);
+  background-color:#ffffff;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
 
 
 .bottom {
