@@ -61,7 +61,7 @@ main h1, span, th {
   align-items: center;
   flex-direction: column;
   width: 22%;
-  height: 800px;
+  height: 970px;
   max-height: 100%;
   max-width: 100%;
   border-radius: 20px;
@@ -76,7 +76,7 @@ main h1, span, th {
   box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.77);
 }
 
-@media (max-width: 1width100px) {
+@media (max-width: 1250px) {
   .container{
     display: flex;
     flex-direction: column;
@@ -89,12 +89,7 @@ main h1, span, th {
     width: 40%;
   }
 
-  .h12{
-    position: absolute;
-    width: 50px;
-  }
 }
-
 
 .content{
   max-width: 100%;
@@ -136,6 +131,7 @@ table.dia-semana {
 table.linha1 {
   border-collapse: collapse;
   width: 95%;
+  height: 150px;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -145,6 +141,7 @@ table.linha1 {
 table.linha2 {
   border-collapse: collapse;
   width: 95%;
+  height: 150px;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -154,6 +151,7 @@ table.linha2 {
 table.linha3 {
   border-collapse: collapse;
   width: 95%;
+  height: 150px;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -163,6 +161,7 @@ table.linha3 {
 table.linha4 {
   border-collapse: collapse;
   width: 95%;
+  height: 150px;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -172,6 +171,7 @@ table.linha4 {
 table.linha5 {
   border-collapse: collapse;
   width: 95%;
+  height: 150px;
   margin:auto;
   padding-top: 380px;
   font-size: 2rem;
@@ -255,8 +255,9 @@ h4{
 h5{
   position: relative;
   text-align: center;
-  top: -215px;
-  font-size: 15px;
+  top: -185px;
+  left: -6px;
+  font-size: 17px;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
   color: yellow;
@@ -269,9 +270,9 @@ h5{
 h7{
   position: absolute;
   text-align: center;
-  top: 280px;
-  left: 275px;
-  font-size: 20px;
+  top: 310px;
+  left: 280px;
+  font-size: 17px;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
   color: yellow;
@@ -284,8 +285,8 @@ h7{
 h9 {
   position: relative;
   text-align: center;
-  top: -60px;
-  left: -166px;
+  top: -25px;
+  left: -170px;
   font-size: 17px;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
@@ -299,7 +300,8 @@ h9 {
 h11 {
   position: relative;
   text-align: center;
-  top: -40px;
+  top: -8px;
+  margin-left: 2px;
   font-size: 17px;
   font-weight: bold;
   font-family: 'Lilita One', cursive;
@@ -437,10 +439,10 @@ table.extralateral {
 
 .victory{
   position: absolute;
-  top: -145px;
-  left: 45px;
-  width: 23%;
-  height: 23%;
+  top: -135px;
+  left: 60px;
+  width: 20%;
+  height: 20%;
   background-image: url("../imgs/victory.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -470,9 +472,8 @@ table.extralateral {
 .charizard{
   position: absolute;
   top: 165px;
-  left: 315px;
-  width: 5%;
-  height: 5%;
+  width: 4%;
+  height: 4%;
   z-index: 10;
   background-image: url("../imgs/charizard-mb.png");
   background-repeat: no-repeat;
@@ -502,6 +503,37 @@ table.extralateral {
 
 }
 
+
+/*--------------EXTRAS--------------*/
+
+.extras-texto{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 40%;
+  height: 250px;
+  min-width: 100%;
+}
+
+.caixas{
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 30px;
+  height: 5px;
+  padding-top: 50px;
+  border-radius: 80px;
+  font-size: 2rem;
+  background-color: #ffffff;
+  }
+
+.extras-span-texto{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  color: yellow;
+  -webkit-text-stroke: 1px #4c3412;
+	-webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 .umbreonn{
   position: relative;
   top: -140px;
@@ -510,32 +542,12 @@ table.extralateral {
   filter: drop-shadow(0 0 10px white);
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-}
-
-/*--------------EXTRAS--------------*/
-
-.extras-texto{
-  overflow-y: scroll;
-  overflow-x: hidden;
-  max-height: 40%;
-}
-
-.caixas{
-width: 350px;
-margin-right: 15px;
-margin-top: 20px;
-height: 5px;
-padding-top: 50px;
-border-radius: 80px;
-font-size: 2rem;
-background-color: #ffffff;
 }
 
 .logs{
   overflow-y: scroll;
   max-height: 40%;
-  height: 200px;
+  height: 400px;
   margin-left: 20px;
   margin-right: 15px;
   -webkit-text-stroke: 1px #6b2a3b;
@@ -544,7 +556,7 @@ background-color: #ffffff;
 
 .creditos{
   max-height: 100%;
-  width: 415px;
+  width: 100%;
   height: 150px;
   border-radius: 7px;
   background-color: white;
@@ -715,22 +727,6 @@ background-color: #ffffff;
   100% {
     opacity: 1;
   }
-}
-
-@media (max-width: 700px) {
-  .container{
-    flex-direction: column;
-    display: flex;
-  }
-  .h3{
-    font-size: 1rem;
-  }
-
-  .h12{
-    left: 150px;
-  }
-
-
 }
 
 /**
