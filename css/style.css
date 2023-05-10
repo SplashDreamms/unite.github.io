@@ -414,6 +414,57 @@ table.extralateral {
 
 }
 
+.espeon{
+  position: relative;
+  top: -130px;
+  left: 55px;
+  width: 30%;
+  height: 30%;
+  background-image: url("https://cdn.discordapp.com/attachments/1102609869900632065/1105809973361004686/Espeon_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.glaceon{
+  position: relative;
+  top: -135px;
+  left: 50px;
+  width: 40%;
+  height: 40%;
+  background-image: url("https://cdn.discordapp.com/attachments/1102609869900632065/1105809973675565109/Glaceon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.urshifuz{
+  position: relative;
+  top: -115px;
+  left: 20px;
+  width: 80%;
+  height: 80%;
+  background-image: url("https://cdn.discordapp.com/attachments/1102609869900632065/1105835371830444092/01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
 .victory{
   position: absolute;
   top: -135px;
@@ -453,23 +504,6 @@ table.extralateral {
   height: 4%;
   z-index: 10;
   background-image: url("../imgs/charizard-mb.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding: 180px 80px 0px 0;
-  filter: drop-shadow(0 0 10px white);
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-}
-
-.urshifu{
-  position: absolute;
-  top: 175px;
-  width: 3%;
-  height: 3%;
-  z-index: 10;
-  background-image: url("https://cdn.discordapp.com/attachments/1102609869900632065/1103284038879432724/Bp_TrainerAvatar_BP15_01_d4d93f060920f780.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
