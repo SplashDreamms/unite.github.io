@@ -414,6 +414,23 @@ table.extralateral {
 
 }
 
+.urshifu{
+  position: relative;
+  top: -120px;
+  left: 55px;
+  width: 90%;
+  height: 90%;
+  background-image: url("https://cdn.discordapp.com/attachments/1102609869900632065/1103284038879432724/Bp_TrainerAvatar_BP15_01_d4d93f060920f780.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 180px 80px 0px 0;
+  filter: drop-shadow(0 0 10px white);
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
 .espeon{
   position: relative;
   top: -130px;
